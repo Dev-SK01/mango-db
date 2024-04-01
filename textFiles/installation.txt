@@ -1,0 +1,35 @@
+------------------------- MONGODB installation ------------------------
+
+1. Refer the https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/#std-label-install-mdb-community-ubuntu
+
+2. start Command : sudo systemctl start mongod 
+   if fail RUN   : sudo systemctl daemon-reload
+
+3. stop Command  : sudo systemctl stop mongod
+
+4. Check Status  : sudo systemctl status mongod
+
+5. restart       : sudo systemctl restart mongod
+
+6. mangoshell    : mangosh
+
+7. Remove MANGODB : sudo apt-get purge "mongodb-org*"
+
+8. Remove Data    : sudo rm -r /var/log/mongodb && sudo rm -r /var/lib/mongodb
+
+9. instead of systemctl use service
+-----------------------------------------------------------------------------
+reference for database : https://geeksforgeeks.org/types-of-databses/
+
+in mongo document is json objects.
+
+Merits :
+In no SQL there is scheme document collection database there is the document only there is no 
+structure in no SQL basically the key value pairs it automtically creates new id for that.
+
+Demerits :  
+repetition is the problem. we cannot avoid we need to manage
+
+
+
+

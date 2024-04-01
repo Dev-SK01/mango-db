@@ -1,0 +1,15 @@
+-------------------------------- MONGODB BASIC -------------------
+
+1. show dbs --> shows the database
+
+2. use dbname --> creates new database 
+   in mongo it creates new database if we not created then if we create database no data is there
+    it dont use that database
+
+3. cls --> clears the terminal screen 
+
+4. db is general for the mongoDB 
+
+---------------------------- Inserting objcts in database -------------------
+ we need to create a database using use dbname to create a database
+1. db.collection-name.insertOne({key : "value"})

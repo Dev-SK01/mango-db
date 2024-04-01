@@ -1,1 +1,1 @@
-# mango-db
+# mongo-db
