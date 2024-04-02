@@ -1,0 +1,33 @@
+--------------------------------- MONGODB QUERIES ----------------------------
+
+1.db.collection.find().limit(number) --> show the number os data based on the number.
+
+2. find().sort({property : value}) --> sorts the data based on the propery if that alphabetic 
+   value = 1 --> a-z sort , value = -1 , z-a sort
+
+3.find().skip(number) -->skips that document or json object 
+
+4. find({property: value}) --> finds tha property with all data
+
+5. find({property: value} , {property : 1 , property : 0}) --> finds the data by the first property
+   then shows only the property value
+
+------------------------------- COMPLEX QUERIES -----------------------------------
+
+1. find({property : {$eq : value}}) --> means find the data with value thats equal to the value
+
+2.$ne{value} --> not equal
+
+3.$lt , $gt , $gte , $lte
+
+4.$in:[value] --> show the data if presents
+
+5.$nin:[value] --> eliminate those data if presents and shows other data
+
+6.$exists: true | flase --> shows the data if the property is present
+
+7.find({propery : {$lt : value , $gt : value}}) --> Checks both values and return
+
+8. {$or:[{property:value} , {property:value}]}  --> applies the or logical operation
+
+9.{name:{$not:{$eq:'srikanth'}}} -- not operation

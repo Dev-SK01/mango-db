@@ -11,5 +11,16 @@
 4. db is general for the mongoDB 
 
 ---------------------------- Inserting objcts in database -------------------
+
  we need to create a database using use dbname to create a database
+
+ we can insert arrays also not only json objects ,  nested object
+
+ if we insert multiple data [] use array to isert many data
+
 1. db.collection-name.insertOne({key : "value"})
+
+2. db.collection.find() --> shows all collection data
+
+3.db.collection.indsertMany() --> inserts many data in the database
+
