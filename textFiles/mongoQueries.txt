@@ -10,7 +10,7 @@
 4. find({property: value}) --> finds tha property with all data
 
 5. find({property: value} , {property : 1 , property : 0}) --> finds the data by the first property
-   then shows only the property value
+   then shows only the property value 1 means show 0 means not show
 
 ------------------------------- COMPLEX QUERIES -----------------------------------
 

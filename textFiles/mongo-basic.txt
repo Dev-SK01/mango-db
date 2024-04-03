@@ -4,11 +4,15 @@
 
 2. use dbname --> creates new database 
    in mongo it creates new database if we not created then if we create database no data is there
-    it dont use that database
+   it dont use that database
 
 3. cls --> clears the terminal screen 
 
 4. db is general for the mongoDB 
+
+5. show collection 
+
+6. db.dropDatabase() --> delete the database
 
 ---------------------------- Inserting objcts in database -------------------
 
@@ -16,11 +20,14 @@
 
  we can insert arrays also not only json objects ,  nested object
 
- if we insert multiple data [] use array to isert many data
+ if we insert multiple data [] use array to insert many data
 
 1. db.collection-name.insertOne({key : "value"})
 
 2. db.collection.find() --> shows all collection data
 
-3.db.collection.indsertMany() --> inserts many data in the database
+3.db.collection.insertMany() --> inserts many data in the database
 
+4.findOne() --> gives the only one document
+
+5.countDocuments() --> gives the count of the document

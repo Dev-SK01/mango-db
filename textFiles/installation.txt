@@ -19,15 +19,19 @@
 
 9. instead of systemctl use service
 -----------------------------------------------------------------------------
+
 reference for database : https://geeksforgeeks.org/types-of-databses/
 
 in mongo document is json objects.
 
 Merits :
+
 In no SQL there is scheme document collection database there is the document only there is no 
 structure in no SQL basically the key value pairs it automtically creates new id for that.
+document is json object 
 
 Demerits :  
+
 repetition is the problem. we cannot avoid we need to manage
 
 

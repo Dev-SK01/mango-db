@@ -1,0 +1,7 @@
+------------------------------ COMPARING PROPERTY -----------------------
+
+1. $expr:{logicaloptr:["$property1", "$property2"]} --> compares the two properties.
+
+2. if we access the nested object property access by '.' operator "object.property"
+
+   find({"object.property" : "value"})

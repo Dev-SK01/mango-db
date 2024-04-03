@@ -1,0 +1,21 @@
+-------------------------------- MONGO UPDATE QUERIES ---------------------------
+
+1. update & insertNew --> updateOne({update doc : value} , {$set{updation : value}})
+
+2. increment --> updateOne({update doc : value} , {$inc{age : 2}})
+
+3.rename property --> updateOne({update doc : value} , {$rename{property : "rename name"}})
+
+4. push to array type -->  updateOne({update doc : value} , {$push{array-property : "value"}})
+
+5. delete  array type  -->  updateOne({update doc : value} , {$pull{array-property : "value"}})
+
+6. delete property --> updateOne({update doc : value} , {$unset{delete-property  : ""}})
+
+7.updateMany() --> updates the many doucments
+
+8. replaceOne({update doc : value} , {new-property: value}) --> deletes the existing doc nd add the   given new doc
+
+9. deleteOne({document}) --> delete the whole doucment
+
+10.deleteMany({document}) --> delete many doucments
