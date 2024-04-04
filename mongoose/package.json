@@ -1,0 +1,27 @@
+{
+  "name": "mongo-db",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./scripts/index.js",
+  "scripts": {
+    "dev" : "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dev-SK01/mango-db.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dev-SK01/mango-db/issues"
+  },
+  "homepage": "https://github.com/Dev-SK01/mango-db#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "dependencies": {
+    "mongoose": "^8.3.0"
+  }
+}

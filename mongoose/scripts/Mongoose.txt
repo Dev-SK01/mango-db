@@ -1,0 +1,24 @@
+--------------------------------- MONGOOSE BASIC ------------------------
+
+1. Mongooose is mongoDB for nodeJS . Its a nodejs library to connect node to mongoDB\
+
+2. Installation : npm i mongoose --save
+
+3. connnect mongoDB mongoose.connect("mongodb://localhost/database-name")
+
+4. in mongoose connect the mongoDb document and doing CRUD operations
+
+-------------------------- MONGOOSE SCHEMA ---------------
+
+1. Mongoose schema maps the mongodb collection and defines the shape of teh document
+
+2. Schema means defining the datatype fo the docuement
+
+3. models is a Mongo document that is create along with the defined schema
+
+4. const userSchea = new mongoose.Schema({
+    name : String,
+    age  : Number
+})
+
+5. mongoose.model('colection-name' , defined-schema)
