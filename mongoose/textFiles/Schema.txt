@@ -1,0 +1,49 @@
+-------------------------- MONGOOSE SCHEMA ---------------
+
+1. Mongoose schema maps the mongodb collection and defines the shape of teh document
+
+2. Schema means defining the datatype fo the document
+
+3. models is a Mongo document that is create along with the defined schema
+
+4. const userSchema = new mongoose.Schema({
+    name : String,
+    age  : Number
+})
+
+5. mongoose.model('colection-name' , defined-schema)
+
+6. in schemea structure we define the type of the data but it not necessary to add in document
+
+7. we can nest the schema, if we nest the schema it generate a new id for that schema. it more helpful
+   to identify
+
+------------------------------- Schema Validation --------------------------------
+
+schema validation works is some methods only. it cannot work in And methods.
+create , save ,findById , not and methods 
+
+8. we can validate the user given data in mongoose Schema 
+   {
+    type: String,
+    required : true,
+    lowercase : true,
+    uppercase : true
+   } --> tells this field is required
+
+9.  immutable : true --> says cannot change the data
+    min : tell the minimum value 
+    max : tells the maximum value
+    minLength : tells the string's min lenght
+    maxLength : tells the string's max lenght
+    ref : refers the collection to use the populate() method
+
+------------------------------------- Custom Validation --------------------------
+
+we can customize the validation in the mongoose.
+{
+  validate : {
+    validator : () => ( your validation logic)
+    message : (props) => props.value --> gives you the value then show the message 
+  }
+}

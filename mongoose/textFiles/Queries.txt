@@ -1,0 +1,37 @@
+--------------------------- Mongooose Queries ---------------------
+
+ collection.find({name: "devsk"}) --> finds the data like mongoDB command
+
+ collection.findById('id') --> finds the data like mongoDB command
+
+ collection.findMany({name: "devsk"}) --> finds the data like mongoDB command
+
+ collection.exists({name: "devsk"}) --> finds the data like mongoDB command
+
+ collection.update({name: "devsk"} , {'name' : 'kavin'}) --> update's the data like mongoDB command
+
+ collection.updateOne({name: "devsk"} , {'name' : 'kavin'}) --> update's the data like mongoDB command
+
+ collection.updateMany({name: "devsk"} , {'name' : 'kavin'}) --> update's the data like mongoDB command
+
+ collection.delete({_id: "devsk"}) --> delete's the data like mongoDB command
+
+ ---------------------- Advanced Mongooose Queries ---------------------
+
+ it means find the data by some specific queries
+
+ collection.where('property').equals('data').where('age').lt(10)
+
+ where() --> tells the property to sort and apply your find logic
+
+ select(property) --> selects the given property as o/p
+
+ populate(property) --> acces the another mongo doc and show the data . 
+ for the we need to specify the property that has the another mongo doc id
+
+
+
+
+
+
+
