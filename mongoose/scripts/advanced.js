@@ -17,6 +17,6 @@ async function connectDB(){
     advancedQueries.details();
     console.log(virtualProp.fullAddress)
 
-    advancedQueries.save()
+    advancedQueries.save() // for middleware
 
 }

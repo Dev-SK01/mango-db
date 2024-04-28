@@ -8,8 +8,6 @@
 
  collection.exists({name: "devsk"}) --> finds the data like mongoDB command
 
- collection.update({name: "devsk"} , {'name' : 'kavin'}) --> update's the data like mongoDB command
-
  collection.updateOne({name: "devsk"} , {'name' : 'kavin'}) --> update's the data like mongoDB command
 
  collection.updateMany({name: "devsk"} , {'name' : 'kavin'}) --> update's the data like mongoDB command

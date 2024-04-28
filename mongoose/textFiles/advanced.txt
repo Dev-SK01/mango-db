@@ -1,0 +1,43 @@
+----------------------------- MONGOOSE ADVANCED -----------------------
+
+1. we can write a own function in schema definition
+
+schema.methods.function-name = function () {
+    // logic
+}
+
+2. use this fucntion in queried data --> user.function-name()
+
+3. we can write our own CRUD function to customized search 
+
+schema.statics.function-name = function () { --> it works on whole collection you mentioned
+  // your logic
+}
+
+4. schema.methods --> perform some operations on queried data
+
+5. schema.statics --> creates a won customized queries . we can use this as direct query fucntion
+   example : users.findquery(arg)
+
+6. schema.query --> can call the queried function chaining
+   example : users.find().findQuery('arg')
+
+7. schema.virtual('temp prop').get(function () {
+    // your logic
+}) --> create a virtual property. not in actual document.
+
+-------------------- MiddleWare -----------------------
+
+1.mongoose middlewares are what to to in between update , save , delete functions
+
+2. it has 2 methos pre() , post()
+
+SYNTAX : 
+
+schema.pre('operation' , function(doc , next){
+    // logic 
+})
+
+schema.post('operation' , function(doc , next){
+    // logic 
+})

@@ -4,7 +4,8 @@ const mongoose  = require('mongoose')
 const addressSchema =  new mongoose.Schema({
     state : String,
     Pincode : Number
-})
+});
+
 // ceating the new schema for the collection
 const userSchema = new mongoose.Schema({
     name : String,
@@ -35,5 +36,35 @@ const userSchema = new mongoose.Schema({
     address : addressSchema
 });
 
+// schema functions
+userSchema.methods.details =  function () {
+    console.log(`I'm ${this.name} My Age is ${this.age}`)
+};
+userSchema.methods.updated =  function () {
+    console.log(`Updated ${this.updatedAt} `)
+};
+// customized CRUD fucntions
+
+userSchema.statics.findByName = function(name){
+ if(name == null){
+    return console.error('Please Enter name Arugument')
+ }else{
+    return this.find({name : new RegExp(name)})
+ }
+};
+    
+userSchema.virtual('fullAddress').get(function()  {
+    return `${this.address.state} ${this.address.Pincode}`
+});
+
+userSchema.pre('save' , function(next){
+    this.updatedAt = Date.now();
+    console.log('Updated!!!')
+    next()
+});
+
+userSchema.post('save' , function(){
+    console.log(this.updatedAt);
+});
 // users is collecton this collection uses the defined  userSchema
 module.exports = mongoose.model('users' , userSchema);
