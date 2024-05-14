@@ -56,13 +56,13 @@ userSchema.statics.findByName = function(name){
 userSchema.virtual('fullAddress').get(function()  {
     return `${this.address.state} ${this.address.Pincode}`
 });
-
+// middleware in mongoose
 userSchema.pre('save' , function(next){
     this.updatedAt = Date.now();
     console.log('Updated!!!')
     next()
 });
-
+// middleware in mongoose
 userSchema.post('save' , function(){
     console.log(this.updatedAt);
 });

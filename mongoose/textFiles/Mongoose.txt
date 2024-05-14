@@ -1,6 +1,6 @@
 --------------------------------- MONGOOSE BASIC ------------------------
 
-1. Mongooose is mongoDB for nodeJS . Its a nodejs library to connect node to mongoDB
+1. Mongoose is mongoDB for nodeJS . Its a nodejs library to connect node to mongoDB
 
 2. Installation : npm i mongoose --save
 
